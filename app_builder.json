@@ -31,14 +31,14 @@
       "name": "gcr.io/cloud-builders/docker",
       "args": [
         "push",
-        "gcr.io/$PROJECT_ID/prediction-api:0.0.1"
+        "gcr.io/$PROJECT_ID/prediction-ui:0.0.1"
       ]
     },
-    {
+	{
       "name": "gcr.io/cloud-builders/docker",
       "args": [
         "push",
-        "gcr.io/$PROJECT_ID/prediction-ui:0.0.1"
+        "gcr.io/$PROJECT_ID/prediction-api:0.0.1"
       ]
     },
     {
