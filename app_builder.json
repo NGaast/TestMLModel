@@ -18,15 +18,15 @@
         "./prediction-api"
       ]
     },
-    {
+	{
       "name": "gcr.io/cloud-builders/docker",
       "args": [
-        "build",
-        "-t",
-        "gcr.io/$PROJECT_ID/training-api:0.0.1",
-        "./training-api"
+       "build",
+       "-t",
+       "gcr.io/$PROJECT_ID/pipeline_trainer:0.0.1",
+       "./pipeline_trainer"
       ]
-    },
+    }, 
     {
       "name": "gcr.io/cloud-builders/docker",
       "args": [
@@ -40,13 +40,13 @@
         "push",
         "gcr.io/$PROJECT_ID/prediction-api:0.0.1"
       ]
-    },
+    },  
     {
       "name": "gcr.io/cloud-builders/docker",
       "args": [
-        "push",
-        "gcr.io/$PROJECT_ID/training-api:0.0.1"
+          "push",
+          "gcr.io/$PROJECT_ID/pipeline_trainer:0.0.1"
       ]
-    }
+    },
   ]
 }
